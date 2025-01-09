@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">MOSHEDAYAN</div>
+      <div class="logo">SREEHARI.S</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -21,7 +26,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">MOSHEDAYAN</div>
+      <div class="logo">SREEHARI.S</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -38,12 +43,12 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/moshedayan_profile_pic.jpeg" alt="profile picture" />
+        <img src="./assets/PROFILE_PIC.jpeg" alt=" sreehari profile " />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">MOSHEDAYAN</h1>
-        <p class="section__text__p2">GRAPHIC DESIGNER & VIDEO EDITOR</p>
+        <h1 class="title">SREEHARI.S</h1>
+        <p class="section__text__p2">FULL STACK DEVELOPER</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -51,8 +56,7 @@
           >
             Download CV
           </button>
-
-          <button class="btn btn-color-1" onclick="scrollToContact()">
+          <button id="contact-info-btn" class="btn btn-color-1">
             Contact Info
           </button>
         </div>
@@ -61,7 +65,13 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/r-moshedayan-945668322/'"
+            onclick="location.href='https://www.linkedin.com/in/sreehari-s-5a2a592b9/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/sreehari-dev-codes'"
           />
         </div>
       </div>
@@ -72,7 +82,7 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/moshe_pic.jpeg"
+            src="./assets/Profile_pic _2.jpeg"
             alt="Profile picture"
             class="about-pic"
           />
@@ -86,36 +96,24 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>3+ years <br />VIDEO EDITING & GRAPHICDESIGN</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>
-                B.Sc. Animation & VFX <br />Vismayasmax Animation and VFX<br />
-                T H I R U V A N T H A P U R A M , K E R A L A
-              </p>
+              <p>1 years <br />FULL STACK DEVELOPER</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Freelance Experience (3+ Years) With over three years of
-              experience in freelance video editing, graphic design, and
-              animation, I specialize in creating high-quality content across
-              various media formats.<br />
-              My skills include: Video Editing: Polished videos with advanced
-              editing and sound design.<br />
-              Graphic Design: Branding, promotional materials, and web graphics.
-              3D & 2D Animation: Creative animations for diverse projects.
-              Motion Graphics & VFX: Dynamic graphics and visual effects for
-              impactful storytelling. Spot Editing & Music Making: Fast-paced
-              editing and original music composition.<br />
-              I work closely with clients to bring their vision to life,
-              ensuring each project meets the highest standards.
+              I have one year of internship experience as a MERN stack developer
+              at Stack Up Learning Hub, Trivandrum. During my internship, I
+              worked on various projects. <br />including: Employee Management
+              System: Developed a frontend with features like pagination and
+              search functionality for enhanced user experience.<br />
+              WebSocket Chat Application: Implemented real-time messaging with
+              authentication and authorization using JWT and sessions.<br />
+              My technical expertise includes: Frontend: HTML5, CSS (including
+              Tailwind CSS), JavaScript, Bootstrap, and Media Queries.
+              <br />Backend: Node.js, Express.js. Frontend Framework:
+              React.js.<br />
+              Authentication: Proficient in implementing secure login systems
+              using JWT and sessions.
             </p>
           </div>
         </div>
@@ -124,7 +122,7 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="scrollToNextSection('experience')"
+        onclick="scrollToExperience()"
       />
     </section>
     <section id="experience">
@@ -133,7 +131,7 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">GRAPHIC DESGIN SOFTWARE</h2>
+            <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
               <article>
                 <img
@@ -142,7 +140,19 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Photoshop</h3>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
                   <p>Experienced</p>
                 </div>
               </article>
@@ -153,14 +163,47 @@
                   class="icon"
                 />
                 <div>
-                  <h3>illustrator</h3>
+                  <h3>Bootstrap</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>mediaqueries</h3>
                   <p>Experienced</p>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">VIDEO EDITING SOFTWARE</h2>
+            <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
               <article>
                 <img
@@ -169,7 +212,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Davinci resolve</h3>
+                  <h3>PostgreSQL</h3>
                   <p>Experienced</p>
                 </div>
               </article>
@@ -180,8 +223,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>After effects</h3>
-                  <p>Experienced</p>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -190,22 +233,26 @@
                   alt="Experience icon"
                   class="icon"
                 />
-
                 <div>
-                  <h3>premiere pro</h3>
-                  <p>Experienced</p>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDb</h3>
+                  <p>Intermediate</p>
                 </div>
               </article>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="scrollToNextSection('contact')"
-      />
     </section>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
@@ -215,12 +262,14 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/PROJECT 1.jpg"
+                src="./assets/employee_management_system_converted.png"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">HEADSET JBL</h2>
+            <h2 class="experience-sub-title project-title">
+              Employee Management
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -239,12 +288,12 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/PROJECT 3.jpg"
+                src="./assets/chat_app_image_converted.png"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">NIKE AIR JORDAN</h2>
+            <h2 class="experience-sub-title project-title">Chat App</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -263,12 +312,14 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project 2.jpg"
+                src="./assets/user_management_system_converted.png"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">SPECIAL SALAD</h2>
+            <h2 class="experience-sub-title project-title">
+              User <br />Management
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -286,6 +337,7 @@
           </div>
         </div>
       </div>
+
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
@@ -298,8 +350,8 @@
             class="icon contact-icon email-icon"
           />
           <p>
-            <a href="mailto:ramachandranmoshedayan@gmail.com"
-              >ramachandranmoshedayan@gmail.com</a
+            <a href="mailto:sreehari.stackup@gmail.com"
+              >sreehari.stackup@gmail.com</a
             >
           </p>
         </div>
@@ -310,7 +362,9 @@
             class="icon contact-icon"
           />
           <p>
-            <a href="https://www.linkedin.com/in/r-moshedayan-945668322/"
+            <a
+              href="https://www.linkedin.com/in/sreehari-s-5a2a592b9/"
+              target="_blank"
               >LinkedIn</a
             >
           </p>
